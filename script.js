@@ -29,7 +29,7 @@ function validar() {
 
     // Validar cada campo
     let v1 = (p1 === "yock");
-    let v2 = (p2 === "22/04/2023");
+    let v2 = (p2 === "22/05/2023");
     let v3 = (p3 === "tambo");
     let v4 = respuestasCorrectasP4.includes(p4);
 
