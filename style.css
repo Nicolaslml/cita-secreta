@@ -258,3 +258,44 @@ label {
     margin: 0;
     padding: 8px 30px 8px 10px; /* manteniendo padding right para icono */
 }
+
+#form-container, #form-container-2, #invitation, #loader {
+    background: rgba(242, 222, 222, 0.95); /* palo rosa transparente */
+    padding: 35px 25px;
+    border-radius: 25px;
+    border: 3px solid #7b2d3a; /* vino oscuro */
+    box-shadow: 0 8px 35px rgba(123, 45, 58, 0.4);
+    text-align: center;
+    max-width: 450px;
+    width: 90%;
+    animation: fadeIn 1s ease-in-out;
+}
+
+#form-container, #form-container-2 {
+    font-family: 'Great Vibes', cursive !important;
+    color: #7b2d3a !important; /* color vino */
+    font-size: 16px !important; /* tamaño base */
+}
+
+#form-container h2, #form-container-2 h2 {
+    font-size: 1.6em !important;
+    margin-bottom: 15px !important;
+    color: #7b2d3a !important;
+}
+
+#form-container label, #form-container-2 label {
+    font-size: 1.1em !important;
+    margin-top: 8px !important;
+    margin-bottom: 0 !important;
+    color: #7b2d3a !important;
+}
+
+#form-container input, #form-container-2 input {
+    font-family: 'Great Vibes', cursive !important;
+    font-size: 16px !important;
+    color: #7b2d3a !important;
+    padding: 8px 30px 8px 10px !important;
+    width: 80% !important;
+    margin: 6px auto 12px auto !important;
+    box-sizing: border-box !important;
+}

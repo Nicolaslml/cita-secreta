@@ -38,6 +38,38 @@
     <p id="error-message"></p>
 </div>
 
+<!-- Segunda pantalla con más preguntas -->
+<div id="form-container-2" style="display:none;">
+    <h2> ¿Pensaste que era todo? Responde estas preguntas extra, mi amor...</h2>
+
+    <label>¿Qué te dí el 22 de agosto del año pasado?</label>
+    <div class="input-wrapper">
+        <input type="text" id="pregunta5">
+        <span class="checkmark" id="check5"></span>
+    </div>
+
+    <label>¿A dónde fuimos a comer ese día?</label>
+    <div class="input-wrapper">
+        <input type="text" id="pregunta6">
+        <span class="checkmark" id="check6"></span>
+    </div>
+
+    <label>Decifra que significan estas iniciales TAMMAP</label>
+    <div class="input-wrapper">
+        <input type="text" id="pregunta7">
+        <span class="checkmark" id="check7"></span>
+    </div>
+
+    <label>Como pista, ya hemos ido antes a un lugar así, y antes fuimos a S...</label>
+    <div class="input-wrapper">
+        <input type="text" id="pregunta8">
+        <span class="checkmark" id="check8"></span>
+    </div>
+
+    <button onclick="validarSegundaPantalla()">Siguiente</button>
+    <p id="error-message-2" style="color:#dc3545; font-weight:bold;"></p>
+</div>
+
     <!-- Loader -->
 <div id="loader" style="display:none;">
     <div class="loader-heart"></div>
@@ -47,7 +79,7 @@
     <!-- Pantalla final -->
     <div id="invitation" style="display:none;">
         <h2 class="shine-text">💌 Tenemos una cita... 💌</h2>
-        <p>Mi amor, te invito a una cita especial en el <b>teatro Peruano japonés</b> 
+        <p>Mi amor, te invito a una cita especial en el <b>Teatro Peruano japonés</b> 
         el  <b>22 de agosto</b> a las  <b>8:30 pm</b>   
         Ponte algo bonito y prepárate para una linda noche para nosotros </p>
         Te amo preciosa ❤️
