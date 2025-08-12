@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+body {
+    font-family: 'Great Vibes', cursive;
+    background-color: #7b2d3a; /* vino sólido */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Contenedores */
+#form-container, #invitation, #loader {
+    background: rgba(242, 222, 222, 0.95); /* palo rosa transparente */
+    padding: 35px 25px;
+    border-radius: 25px;
+    border: 3px solid #7b2d3a; /* vino oscuro */
+    box-shadow: 0 8px 35px rgba(123, 45, 58, 0.4);
+    text-align: center;
+    max-width: 450px;
+    width: 90%;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.fadeInScale {
+    animation: fadeInScale 0.8s ease-in-out forwards;
+}
+
+@keyframes fadeInScale {
+    0% { opacity: 0; transform: scale(0.85); }
+    100% { opacity: 1; transform: scale(1); }
+}
+
+/* Labels */
+label {
+    display: block;
+    margin-top: 12px;
+    color: #7b2d3a; /* vino */
+    font-size: 1.4em;
+}
+
+/* Inputs */
+input {
+    display: block;
+    margin: 8px auto 15px auto;
+    padding: 12px;
+    width: 85%;
+    border-radius: 12px;
+    border: 2px solid #c48792; /* palo rosa */
+    background-color: #f9e8ea; /* rosa claro */
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Great Vibes', cursive;
+    color: #7b2d3a; /* vino */
+}
+
+/* Botón */
+button {
+    padding: 12px 25px;
+    background-color: #7b2d3a; /* vino */
+    border: none;
+    border-radius: 15px;
+    color: #f9e8ea; /* rosa claro */
+    cursor: pointer;
+    font-size: 18px;
+    font-family: 'Great Vibes', cursive;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #a74656; /* tono vino más claro */
+}
+
+/* Mensaje de error */
+#error-message {
+    color: #b33b47; /* rojo vino */
+    font-weight: bold;
+}
+
+/* Loader */
+.loader-circle {
+    border: 6px solid #f9e8ea; /* rosa claro */
+    border-top: 6px solid #7b2d3a; /* vino */
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin: auto;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Texto última pantalla */
+#invitation {
+    color: #7b2d3a; /* vino */
+}
+/* Loader corazón */
+.loader-heart {
+  width: 50px;
+  height: 45px;
+  position: relative;
+  margin: auto;
+  transform-origin: center;
+  animation: heartbeat 1.2s infinite;
+}
+
+.loader-heart::before,
+.loader-heart::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 40px;
+  background: #7b2d3a; /* color vino */
+  border-radius: 25px 25px 0 0;
+  top: 0;
+}
+
+.loader-heart::before {
+  left: 25px;
+  transform: rotate(-45deg);
+  transform-origin: 0 100%;
+}
+
+.loader-heart::after {
+  left: 0;
+  transform: rotate(45deg);
+  transform-origin: 100% 100%;
+}
+
+/* Animación de latido */
+@keyframes heartbeat {
+  0%, 100% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.15);
+  }
+  50% {
+    transform: scale(1);
+  }
+  75% {
+    transform: scale(1.15);
+  }
+}
+
+#form-container h2 {
+    color: #7b2d3a; /* vino */
+}
+
+/* Contenedores - reduce padding y max-width para que entre mejor */
+#form-container {
+    padding: 25px 15px;   /* menos espacio interno */
+    max-width: 350px;     /* menos ancho */
+}
+
+/* Encabezados h2 un poco más pequeños */
+#form-container h2 {
+    font-size: 1.6em;     /* más pequeño que antes */
+    margin-bottom: 15px;
+}
+
+/* Labels - texto más pequeño y menos margen */
+#form-container label {
+    font-size: 1.1em;
+    margin-top: 8px;
+}
+
+/* Inputs - tamaño más compacto */
+#form-container input {
+    width: 80%;
+    padding: 8px 10px;
+    font-size: 16px;
+    margin: 6px auto 12px auto;
+}
+
+/* Botón - tamaño más pequeño */
+#form-container button {
+    font-size: 16px;
+    padding: 10px 20px;
+}
+
+/* Mensaje error - tamaño un poco menor */
+#error-message {
+    font-size: 0.9em;
+}
+

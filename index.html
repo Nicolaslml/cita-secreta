@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invitación Especial</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="form-container">
+    <h2>Primero responde estas preguntas mi amor...</h2>
+    
+    <label>¿Cómo te digo de cariño?</label>
+    <input type="text" id="pregunta1">
+
+    <label>Fecha de nuestro aniversario (dd/mm/yyyy)</label>
+    <input type="text" id="pregunta2">
+
+    <label>¿Dónde fue nuestro primer beso?</label>
+    <input type="text" id="pregunta3">
+
+    <label>¿Qué hicimos el año pasado el 22 de agosto?</label>
+    <input type="text" id="pregunta4">
+
+    <button onclick="validar()">Validar</button>
+    <p id="error-message"></p>
+</div>
+
+    <!-- Loader -->
+<div id="loader" style="display:none;">
+    <div class="loader-heart"></div>
+    <p>Estamos verificando que seas <b>Martha Yocklen</b>...</p>
+</div>
+
+    <!-- Pantalla final -->
+    <div id="invitation" style="display:none;">
+        <h2 class="shine-text">💌 Tenemos una cita... 💌</h2>
+        <p>Mi amor, te invito a una cita especial en el <b>teatro Peruano japonés</b> 
+        el  <b>22 de agosto</b> a las  <b>8:30 pm</b>   
+        Ponte algo bonito y prepárate para una linda noche para nosotros </p>
+        Te amo preciosa ❤️
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
