@@ -11,16 +11,28 @@
     <h2>Para saber a donde vamos primero responde estas preguntas mi amor...</h2>
     
     <label>¿Cómo te digo de cariño?</label>
-    <input type="text" id="pregunta1">
+    <div class="input-wrapper">
+        <input type="text" id="pregunta1">
+        <span class="checkmark" id="check1"></span>
+    </div>
 
-    <label>Fecha donde todo comenzó oficialmente (dd/mm/yyyy)</label>
-    <input type="text" id="pregunta2">
+    <label>Fecha de nuestro aniversario (dd/mm/yyyy)</label>
+    <div class="input-wrapper">
+        <input type="text" id="pregunta2">
+        <span class="checkmark" id="check2"></span>
+    </div>
 
     <label>¿Dónde fue nuestro primer beso?</label>
-    <input type="text" id="pregunta3">
+    <div class="input-wrapper">
+        <input type="text" id="pregunta3">
+        <span class="checkmark" id="check3"></span>
+    </div>
 
     <label>¿Qué hicimos el año pasado el 22 de agosto?</label>
-    <input type="text" id="pregunta4">
+    <div class="input-wrapper">
+        <input type="text" id="pregunta4">
+        <span class="checkmark" id="check4"></span>
+    </div>
 
     <button onclick="validar()">Validar</button>
     <p id="error-message"></p>

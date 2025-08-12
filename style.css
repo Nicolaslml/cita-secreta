@@ -193,4 +193,68 @@ button:hover {
 #error-message {
     font-size: 0.9em;
 }
+.checkmark {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+    vertical-align: middle;
+    font-weight: bold;
+    font-size: 20px;
+}
 
+.checkmark.correct {
+    color: #28a745; /* verde */
+}
+
+.checkmark.wrong {
+    color: #dc3545; /* rojo */
+}
+
+.input-wrapper {
+  position: relative;
+  display: inline-block;
+  width: 85%;
+  margin: 8px auto 15px auto;
+}
+
+.input-wrapper input {
+  width: 100%;
+  padding-right: 30px; /* espacio para el icono */
+  box-sizing: border-box;
+}
+
+.checkmark {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-weight: bold;
+  font-size: 20px;
+  pointer-events: none; /* para que no interfiera al click */
+  user-select: none;
+}
+
+.checkmark.correct {
+  color: #28a745; /* verde */
+}
+
+.checkmark.wrong {
+  color: #dc3545; /* rojo */
+}
+
+label {
+    margin-top: 1px;
+    margin-bottom: 0px;
+}
+
+/* Reduce margen vertical de cada input-wrapper */
+.input-wrapper {
+    margin: 0px auto 0px auto; /* menos espacio abajo */
+}
+
+/* Reduce margen dentro de los inputs */
+.input-wrapper input {
+    margin: 0;
+    padding: 8px 30px 8px 10px; /* manteniendo padding right para icono */
+}
